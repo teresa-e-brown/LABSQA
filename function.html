@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           span{
+            display:inline-block;
+            width: 2em;
+            text-align: center;
+           }
+
+    </style> 
+</head>
+
+<body>
+    <script>
+        function multiply(max) {
+            let table = '<div>';
+            for (let row = 1; row <= max; row++) {
+                table += "<div>";
+
+                for (let column = 1; column <= max; column++) {
+                    let res = "<span>" + row * column + "</span>" ;
+                    // if (res < 10) {
+                    //     table += '0';
+                    // }
+                    table += res + "|";
+                }
+                table += "</div>";
+            }
+
+            table += "</div>";
+            document.write(table);
+        }
+        multiply(10)
+
+
+
+        //  let table = '<div>';
+        // for (let row = 1; row <11; row++){
+        //     table += "<div>";
+
+        //         for (let column = 1; column < 11; column++) {
+        //             let res = row * column;
+        //             if (res < 10 ){
+        //             table += '0';}
+        //             table += res + "|";
+        //         }
+        //         table += "</div>";
+        //  }
+
+        //  table += "</div>";
+        //  document.write (table);
+
+    </script>
+
+</body>
+
+</html>
